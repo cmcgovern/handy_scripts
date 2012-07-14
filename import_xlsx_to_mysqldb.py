@@ -76,7 +76,6 @@ def create_table_with_worksheet(database, worksheet):
 	# Populate Table
 	for row, cells in worksheet.rows().items():
 		if cells[0].row != 1: # Skip headers
-			# Order can be wrong, so you must use the header to find the right value
 			values = [utf_fix(cell.value) for cell in cells]
 			insert_values(database, table_name, available_headers_for_cells(cells, column_headers), values)
 
