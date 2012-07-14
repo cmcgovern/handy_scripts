@@ -5,7 +5,7 @@ import_xlsx_to_mysqldb.py
 
 Assumes database has been created for the import and that there are never more headers than values in columns.
 
-Will strip out spaces from headers to make valid field
+Will replace spaces with underscores to make valid field
 
 Created by Colin McGovern on 2012-07-14.
 Copyright (c) 2012 - Free to use, no warrantee offered, etc...
